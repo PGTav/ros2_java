@@ -124,9 +124,11 @@ Although the `ros2_java_android.repos` file contains all the repositories for th
 
 ```
 # define paths
-ROOT_DIR = ${HOME}
-AMENT_WORKSPACE=${ROOT_DIR}/ament_ws
-ROS2_ANDROID_WORKSPACE=${ROOT_DIR}/ros2_android_ws
+export ROOT_DIR=${HOME}
+export ANDROID_HOME=${ROOT_DIR}/android_sdk
+export ANDROID_NDK=${ROOT_DIR}/android_ndk
+export AMENT_WORKSPACE=${ROOT_DIR}/ament_ws
+export ROS2_ANDROID_WORKSPACE=${ROOT_DIR}/ros2_android_ws
 
 # pull and build ament
 mkdir -p ${AMENT_WORKSPACE}/src
